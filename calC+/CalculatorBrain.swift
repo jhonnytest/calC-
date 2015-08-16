@@ -38,9 +38,9 @@ class CalculatorBrain {
             knownOps[op.description] = op
         }
         learnOps(Op.BinaryOperation("×", *))
-        learnOps(Op.BinaryOperation("-") { $1 - $0 })
-        learnOps(Op.BinaryOperation("+", +))
-        learnOps(Op.BinaryOperation("/"){ $1 / $0 })
+        knownOps["-"] = Op.BinaryOperation("-") { $1 - $0 }
+        knownOps["+"] = Op.BinaryOperation("+", +)
+        knownOps["÷"] = Op.BinaryOperation("÷") { $1 / $0 }
         learnOps(Op.UnaryOperation("√", sqrt))
         learnOps(Op.UnaryOperation("∏") { $0 * M_PI })
         learnOps(Op.BinaryOperation("%") { $1 % $0 })
@@ -72,7 +72,8 @@ class CalculatorBrain {
     }
     
     func evaluate() -> Double? {
-        let (result, remainingOps) = evaluate(opStack)
+        let (result, remainder) = evaluate(opStack)
+        //println("\(opStack) = \(result) with \(remainder) leftover")
         return result
     }
     

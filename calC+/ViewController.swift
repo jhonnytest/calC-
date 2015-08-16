@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func equals() {
-            userIsIntheMiddleOfTypingANumber = false
+        userIsIntheMiddleOfTypingANumber = false
         if let result = brain.pushOperand(displayValue) {
             displayValue = result
         } else {
