@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3477FE8D1B807F5E00899519 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3477FE8C1B807F5E00899519 /* CalculatorBrain.swift */; };
 		34DD8C961ADB520E0050B97F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DD8C951ADB520E0050B97F /* AppDelegate.swift */; };
 		34DD8C981ADB520E0050B97F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DD8C971ADB520E0050B97F /* ViewController.swift */; };
 		34DD8C9B1ADB520E0050B97F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34DD8C991ADB520E0050B97F /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3477FE8C1B807F5E00899519 /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 		34DD8C901ADB520D0050B97F /* calC+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "calC+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34DD8C941ADB520E0050B97F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		34DD8C951ADB520E0050B97F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				34DD8C951ADB520E0050B97F /* AppDelegate.swift */,
 				34DD8C971ADB520E0050B97F /* ViewController.swift */,
 				34DD8C991ADB520E0050B97F /* Main.storyboard */,
+				3477FE8C1B807F5E00899519 /* CalculatorBrain.swift */,
 				34DD8C9C1ADB520E0050B97F /* Images.xcassets */,
 				34DD8C9E1ADB520E0050B97F /* LaunchScreen.xib */,
 				34DD8C931ADB520E0050B97F /* Supporting Files */,
@@ -212,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3477FE8D1B807F5E00899519 /* CalculatorBrain.swift in Sources */,
 				34DD8C981ADB520E0050B97F /* ViewController.swift in Sources */,
 				34DD8C961ADB520E0050B97F /* AppDelegate.swift in Sources */,
 			);
